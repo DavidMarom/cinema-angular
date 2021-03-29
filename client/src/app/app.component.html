@@ -1,0 +1,26 @@
+<div class="outter-container">
+  <div class="inner-container">
+    <div class="nav-bar ca">
+      <div class="logo">
+        <h1>Cinema Now</h1>
+      </div>
+
+      <li role="presentation" routerLinkActive="active-cell" [routerLinkActiveOptions]="{exact: true}">
+        <a routerLink="/">
+          Explore
+        </a>
+      </li>
+      <li role="presentation" routerLinkActive="active-cell" [routerLinkActiveOptions]="{exact: true}">
+        <a routerLink="page02">
+          Our Movies
+        </a>
+      </li>
+
+
+    </div>
+    <div class="page-general hor-block">
+
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
