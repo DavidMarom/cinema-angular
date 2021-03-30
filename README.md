@@ -2,11 +2,11 @@
 
 Run locally:
 
-Client:
+Client (Angular) :
 - npm i
 - ng serve
 
-Server:
+Server (Node.JS) :
 - npm i
 - npm start
   
