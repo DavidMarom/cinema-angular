@@ -1,4 +1,4 @@
-# Ninema Now - written in Angular
+# Ninema Now - (Angular client)
 
 Run locally:
 
