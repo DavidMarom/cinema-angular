@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { Page01Component } from './page01/page01.component';
 import { Page02Component } from './page02/page02.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { StripComponent } from './strip/strip.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     Page01Component,
     Page02Component,
-    NavBarComponent
+    NavBarComponent,
+    StripComponent
   ],
   imports: [
     BrowserModule,
