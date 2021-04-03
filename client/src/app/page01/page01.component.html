@@ -2,8 +2,9 @@
     Explore new movies
 </h1>
 
+<div *ngIf="doneLoading">
 
-<div *ngFor="let mov of arr">
-    <app-strip [aaa]="mov"></app-strip>
-    <!-- <p>{{mov.name}}</p> -->
+    <div *ngFor="let mov of arr">
+        <app-strip [aaa]="mov"></app-strip>
+    </div>
 </div>

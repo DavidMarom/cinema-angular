@@ -1,20 +1,18 @@
 const express = require('express')
-const bodyParser = require('body-parser')
+// const bodyParser = require('body-parser')
 const cors = require('cors')
 const path = require('path')
 const cookieParser = require('cookie-parser')
 const session = require('express-session')
 
 const app = express()
-const http = require('http').createServer(app);
+const http = require('http').createServer(app)
 
 // Express App Config
 app.use(cookieParser())
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 
-
-
-app.use(express.json());
+app.use(express.json())
 app.use(session({
     secret: 'keyboard cat',
     resave: false,
@@ -28,7 +26,7 @@ if (process.env.NODE_ENV === 'production') {
     const corsOptions = {
         origin: ['http://127.0.0.1:8080', 'http://localhost:8080', 'http://127.0.0.1:4200', 'http://localhost:4200'],
         credentials: true
-    };
+    }
     app.use(cors(corsOptions));
 }
 
@@ -46,4 +44,4 @@ app.get('/**', (req, res) => {
 })
 
 const port = process.env.PORT || 3030;
-http.listen(port, () => { console.log('Server is running on port: ' + port)});
+http.listen(port, () => { console.log('Server is running on port: ' + port) });
