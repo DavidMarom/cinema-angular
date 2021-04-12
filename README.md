@@ -1,4 +1,4 @@
-# Ninema Now - (Angular client)
+# Cinema Now - (Angular client)
 
 Run locally:
 
