@@ -13,7 +13,7 @@ export class StripComponent implements OnInit {
 	// 	name:string;
 	// };
 	
-	// @Input()aaa:movie;
+	@Input()aaa;
 
 
 
