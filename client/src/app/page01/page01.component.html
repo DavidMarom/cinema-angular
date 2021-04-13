@@ -1,20 +1,7 @@
 <h1>Explore new movies</h1>
 
 <div *ngIf="doneLoading">
-	<div *ngFor="let mov of arr ">
-
-		<!-- <app-strip [aaa]="mov"></app-strip> -->
-
-		<div class="rb movie-strip">
-			<div class="ral">
-				<div class="add-button-col">
-					<button class="btn2 lnk-btn">
-						<i class="fas fa-plus"></i> Add</button>
-				</div>
-				<p class="movie-title">{{ mov.name }}</p>
-			</div>
-			<p class="movie-id">id: {{ mov.id }}</p>
-		</div>
-
-	</div> <!-- ngFor ends -->
+   <div *ngFor="let mov of arr ">
+      <app-strip [movie]="mov"></app-strip>
+   </div> <!-- ngFor ends -->
 </div>
